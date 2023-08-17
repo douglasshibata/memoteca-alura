@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rodape.component.css']
 })
 export class RodapeComponent implements OnInit {
-  year: number = 2022;
+
   constructor() { }
 
   ngOnInit(): void {
-    this.year = new Date().getFullYear();
   }
 
 }

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'memoteca-alura'`, () => {
+  it(`should have as title 'memoteca'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('memoteca-alura');
+    expect(app.title).toEqual('memoteca');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('memoteca-alura app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('memoteca app is running!');
   });
 });
